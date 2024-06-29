@@ -1,0 +1,43 @@
+{
+  "name": "backend-alap",
+  "version": "0.0.0",
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Alap projekt Backend programozás és tesztelés gyakorlatra",
+  "scripts": {
+    "lint": "npx eslint --ext .ts src/",
+    "lint:tests": "npx eslint --ext .ts spec/",
+    "start": "node -r module-alias/register ./dist --env=production",
+    "dev": "npx nodemon",
+    "test": "nodemon --config ./spec/nodemon.json",
+    "test:no-reloading": "npx ts-node --files -r tsconfig-paths/register ./spec"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "src/public"
+    ],
+    "exec": "npx ts-node --files -r tsconfig-paths/register ./src"
+  },
+  "_moduleAliases": {
+    "@src": "dist"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-node": "^11.1.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript-eslint": "^7.14.1"
+  }
+}
