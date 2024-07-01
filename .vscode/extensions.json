@@ -1,8 +1,8 @@
 {
     "recommendations": [
-        "editorconfig.editorconfig",
         "dbaeumer.vscode-eslint",
         "christian-kohler.npm-intellisense",
-        "postman.postman-for-vscode"
+        "postman.postman-for-vscode",
+        "esbenp.prettier-vscode"
     ]
 }

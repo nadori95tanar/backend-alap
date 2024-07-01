@@ -5,18 +5,15 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:node/recommended"
+    "plugin:node/recommended",
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
-    "max-len": [ "warn", { "code": 80 } ],
     "no-duplicate-imports": [ "warn" ],
     "camelcase": [ "warn", { "properties": "always" } ],
-    "indent": [ "warn", 2 ],
-    "quotes": [ "warn", "double" ],
-    "semi": [ "warn", "always" ],
     "no-process-exit": 0,
     "node/no-unsupported-features/es-syntax": [
       "error", { "ignores": [ "modules" ] }
